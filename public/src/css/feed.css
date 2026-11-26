@@ -1,0 +1,81 @@
+#create-post {
+    z-index: 1001;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    bottom: 0;
+    top: 56px;
+    background: white;
+    text-align: center;
+    transform: translateY(100vh);
+    transition: transform 0.3s;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 16px;
+    display: block;
+}
+
+.floating-button {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.input-section {
+    display: block;
+    margin: 10px auto;
+}
+#shared-moments {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.shared-moment-card.mdl-card {
+    width: 100%;
+    min-height: 0;
+}
+
+.shared-moment-card .mdl-card__title {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+}
+
+.shared-moment-card .mdl-card__title-text {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.shared-moment-card .mdl-card__supporting-text {
+    width: auto;
+    text-align: left;
+    text-indent: 1.5em;
+}
+
+.shared-moment-card .mdl-card__actions {
+    margin: 10px auto;
+    width: 80%;
+}
+@media (min-width: 600px) {
+    .shared-moment-card .mdl-card{
+        height: 300px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .shared-moment-card .mdl-card{
+        width: 45%;
+    }
+}
